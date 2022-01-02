@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    }
+    :root{
+        --primary-color:#ff8882;
+        --black-color:#0e2431;
+        --white-color:#fff;
+    
+    }
+    body{
+        font-family: 'Ubuntu', sans-serif;
+       
+    }
+    /* Navbar */
+nav{
+    position: fixed;
+    width: 100%;
+    
+    
+    
+    
+    /* z-index:999; */
+    transition: all 0.3s ease;
+}
+nav.sticky{
+    background: var(--primary-color);
+    padding:13px 0;
+
+}
+nav .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 55px;
+    z-index: 1;
+    
+
+}
+nav .navbar .logo a{
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--white-color);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+nav.sticky .navbar .logo a{
+    color:var(--white-color);
+
+}
+nav .navbar .menu{
+    display: flex;
+    position: relative;
+}
+nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+    padding-right: 10px;
+}
+nav .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-color);
+    padding: 6px 0;
+    transition: all 0.4s ease;
+
+}
+/* Other Stuff */
+
+.home .main{
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    margin-top: 0rem;
+    height: 100vh;
+    width: 100%;
+    justify-content: center ;
+    
+
+}
+.main{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.home{
+    background: url("trans.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    
+
+}
+.navbar{
+    background-color: var(--primary-color);
+
+}
+.media-icons{
+    
+    padding-right: 100px;
+    
+}
+.media-icons a{
+    color: var(--white-color);
+    padding: 4px;
+}
+.menu li a:hover{
+    color: var(--white-color);
+}
+.text{
+    font-size: 20px ;
+    font-weight: 50px;
+    align-items: center;
+    color: var(--primary-color);
+    z-index: 0;
+    border: 3px solid rgb(255, 255, 255);
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.text:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border: 3px solid var(--primary-color);
+    transition: all 0.4s ease;
+}
+.heading{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+.head{
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+.head:hover{
+    color: var(--black-color);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px ;
+    margin: auto;
+    align-items: center;
+    width: calc(100% / 2 - 20px);
+
+}
+.english{
+    border: 3px soild black;
+    width: 500;
+
+}
+#txt-input{
+    width: 300px;
+    height: 150px;
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+    margin: auto;
+}
+#txt-output{
+    width: 300px;
+    height: 150px;
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+    margin: auto;
+}
+
+
+.button{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    
+
+}
+#btn-translate{
+    background-color: var(--primary-color);
+    border: 2.5px solid var(--primary-color);
+    border-radius: 8px;
+
+
+}
+#btn-translate:hover{
+    background-color: white;
+    color: #ff8882;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Other Stuff */
+
+footer{
+    background: var(--primary-color);
+    padding: 15px 0 ;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    
+    width: 100%;
+}
+footer .text1 span{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+footer .text1 span a{
+    font-weight: 500;
+    color: var(--white-color);
+}
+footer .text1 span a:hover{
+    color:black;
+    transition: all 0.4s ease;
+}
